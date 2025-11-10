@@ -1,63 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Student Marks Table</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header Section -->
+    <header>
+        <h1>Daily News</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">World</a></li>
+                <li><a href="#">Politics</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <table border="1">
-        <caption>Student Marks data</caption>
+    <!-- Main Content -->
+    <main>
+        <!-- Featured News Article -->
+        <section class="featured-news">
+            <h2>Breaking News</h2>
+            <p>Stay updated with the latest news from around the world.</p>
+            <img src="https://via.placeholder.com/800x400" alt="News Image">
+        </section>
 
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Roll No</th>
-                <th>Subject</th>
-                <th>Marks</th>
-            </tr>
-        </thead>
+        <!-- Embedded YouTube Video -->
+        <section class="video-news">
+            <h2>News Video</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
 
-        <tbody>
-            <tr>
-                <td>dev</td>
-                <td>101</td>
-                <td>Mathematics</td>
-                <td>85</td>
-            </tr>
-            <tr>
-                <td>deepak</td>
-                <td>102</td>
-                <td>physics</td>
-                <td>78</td>
-            </tr>
-            <tr>
-                <td>gautam</td>
-                <td>103</td>
-                <td>chemistry</td>
-                <td>92</td>
-            </tr>
-            <tr>
-                <td>sumit</td>
-                <td>104</td>
-                <td>hindi</td>
-                <td>88</td>
-            </tr>
-            <tr>
-                <td>karan</td>
-                <td>105</td>
-                <td>english</td>
-                <td>74</td>
-            </tr>
-        </tbody>
+        <!-- Multimedia Section -->
+        <section class="multimedia">
+            <h2>Multimedia</h2>
+            <h3>Audio Clip</h3>
+            <audio controls>
+                <source src="sample-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
 
-        <tfoot>
-            <tr>
-                <td colspan="3">Total Students</td>
-                <td>5</td>
-            </tr>
-        </tfoot>
+            <h3>Video Clip</h3>
+            <video width="480" controls>
+                <source src="sample-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
 
-    </table>
+        <!-- Hyperlinks -->
+        <section class="links">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="https://www.bbc.com" target="_blank">BBC News</a></li>
+                <li><a href="https://www.cnn.com" target="_blank">CNN</a></li>
+                <li><a href="https://www.reuters.com" target="_blank">Reuters</a></li>
+            </ul>
+        </section>
+    </main>
 
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Daily News. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
